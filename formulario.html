@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media=""
+    <title>Formulário</title>
+</head>
+<body>
+    <header class="cabeçalho">
+        <img src="logotipo.png" alt="logo da empresa Delicado e Criativo">
+    </header>  <br> <br> <br> <br>
+
+    <div class="campo">
+        <h1 id="título"> <strong>Portal dos Noivos</strong> </h1>
+        <p id="subtitulo"> <strong>Preencha seus dados</strong> </p>
+        <br>
+   </div>
+    
+   <form>
+      <fieldset class="grupo">
+         <div class="campo">
+             <label for="Nome"><strong>Nome*</strong></label>
+             <input type="text" name="Nome" id="Nome" required
+         </div>
+        
+          <div class="campo">
+             <labe for="Sobrenome" ><br><strong>Sobrenome*</strong><br></label>
+             <input type="text" name="Sobrenome" id="Sobrenome" required
+          </div>
+       </fieldset>
+
+      <div class="campo">
+         <label for="email"><strong>Email*</strong></label>
+         <input type="email" name="Email" id="Email" required
+      </div>
+
+      <div class="campo">
+         <label for="Telefone"><br><strong>Telefone/Celular*</strong></label>
+         <input type="tel" name="Telefone" id="Telefone" required <br>
+         <label><br><br><strong>O número informado possui WhatsApp?</strong></label>
+
+         <label>
+            <input type="radio" name="whatsapp" value="Sim"> Sim
+         </label>
+
+         <label>
+             <input type="radio" name="whatsapp" value="não"> Não
+         </label>
+
+      </div>
+
+     <br>
+
+     <div class="campo">
+         <label><strong>Em que podemos ajudar?</strong></label> 
+         <label> <br>
+             <input type="radio" name="solicitação" value="orçamento" checked> Orçamento
+         </label>
+        
+         <label>
+             <input type="radio" name="solicitação" value="acompanhar pedido"> Acompanhar pedido
+         </label>
+
+         <label>
+             <input type="radio" name="solicitação" value="realizar pagamento"> Realizar pagamento
+         </label>
+
+         <label>
+             <input type="radio" name="solicitação" value="dúvidas"> Dúvidas
+         </label>
+
+         <label>
+             <input type="radio" name="solicitação" value="cancelamento"> Cancelamento
+         </label>
+      </div>
+
+      <div class="campo">
+         <label for="produto/serviço"><br><strong>Para qual produto/serviço deseja atendimento?</strong></label>
+         <select id="produto/serviço">
+             <option selected disabled value="">Selecione</option>
+             <option>Acessoria Cerimonial</option>
+             <option>Convites</option>
+             <option>Planner da Noiva</option>
+             <option>Caixa de Padrinhos</option>
+
+            </select>
+      </div>
+
+      <fieldset class="grupo">
+         <div id="check">
+              <label><br><strong>Selecione o melhor horário para contato:</strong></label> <br> <br>
+              <input type="checkbox" id="horário 1" name="horário 1" value="manhã"
+              <label for="horário 1">Manhã (8h ás 12h)</label>
+              <input type="checkbox" id="horário 2" name="horário 2" value="tarde"
+              <label for="horário 2">Tarde (14h ás 18h)</label>
+          </div>
+      </fieldset>
+
+      <div class="campo">
+         <br>
+         <label><strong>Descreva sua solicitação com detalhes para que possamos ajudar você.</strong></label>
+         <textarea rows="10" style="width: 26em;" id="detalhes" name="detalhes"></textarea>
+      </div>
+
+      <button class="botao" type="submit">Enviar</button>
+   </form>
+</body>
+</html>
